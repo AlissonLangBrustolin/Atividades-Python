@@ -1,0 +1,73 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	
+float desc3a, desc5a;
+float desc4g, desc6g;
+float litros;
+float total_a_pagar1;
+float total_a_pagar2;
+float total_a_pagar3;
+float total_a_pagar4;
+float valor1;
+float valor2;
+float valor3;
+float valor4;
+char combustivel;
+
+setlocale(LC_ALL, "Portuguese");
+printf("Digite o combustivel A-Alcool ou G-Gasolina:"); 
+scanf("%c" , &combustivel); 
+
+printf("\nQuantos litros deseja abastecer?:");
+scanf("%f" , &litros);
+
+    if(combustivel == 'A' || combustivel == 'a'){
+     printf("\nO combustivel escolhido foi Alcool = 1.90/l\n");
+    
+	if(litros <=20.00){
+	
+	valor1 = litros*1.90;
+	desc3a = valor1*0.03;
+	total_a_pagar1 = valor1-desc3a;
+	
+	printf("\nO preço a ser pago é: %.2f" , total_a_pagar1);
+	
+	}
+     
+    else if(litros >20.00){
+	
+	valor2 = litros*1.90;
+	desc5a = valor2*0.05;
+	total_a_pagar2 = valor2-desc5a;
+	
+	printf("\nO preço a ser pago é: %.2f" , total_a_pagar2);
+		
+}
+}
+	if(combustivel == 'G' || combustivel == 'g'){
+	printf("\nO combustivel escolhido foi Gasolina = 2.50/l\n");
+
+	if(litros <= 20.00){
+	
+	valor3 = litros*2.50;
+	desc4g = valor3*0.04;
+	total_a_pagar3 = valor3-desc4g;
+	
+	printf("\nO preço a ser pago é: %.2f" , total_a_pagar3);
+	
+	}
+
+	else if(litros > 20.00){
+	
+	valor4 = litros*2.50;
+	desc6g = valor4*0.06;
+	total_a_pagar4 = valor4-desc6g;
+	
+	printf("\nO preço a ser pago é: %.2f" , total_a_pagar4);
+		
+	}
+}
+
+}
