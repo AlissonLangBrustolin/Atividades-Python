@@ -1,0 +1,22 @@
+votos_candidato_1 = 0
+votos_candidato_2 = 0
+votos_candidato_3 = 0
+eleitores = int(input("Digite o Número De Eleitores: "))
+for i in range(eleitores):
+    voto = input(
+        "Digite o Número (1/2/3) Do Candidato Em Quem o "
+        f"Eleitor {i + 1} Quer Votar: "
+    )
+    if voto == "1":
+        votos_candidato_1 += 1
+    if voto == "2":
+        votos_candidato_2 += 1
+    if voto == "3":
+        votos_candidato_3 += 1
+
+print(
+    "Votação encerrada"
+    f"\nCandidato 1: {votos_candidato_1} voto(s)"
+    f"\nCandidato 2: {votos_candidato_2} voto(s)"
+    f"\nCandidato 3: {votos_candidato_3} voto(s)"
+)
