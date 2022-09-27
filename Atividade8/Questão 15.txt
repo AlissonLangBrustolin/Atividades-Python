@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(){
+	
+	int iddP,iddJ;
+	setlocale(LC_ALL, "Portuguese");
+	printf("Digite a idade de Pedro: \n");
+	scanf("%d",&iddP);
+	
+    printf("\nDigite a idade de Joana: \n");
+	scanf("%d",&iddJ);	
+	
+	if(iddP > iddJ){
+	printf("\nPedro é o mais velho.");
+	}else
+	
+	if(iddJ > iddP)
+	printf("\nJoana é o mais velha.");
+	
+	
+}
