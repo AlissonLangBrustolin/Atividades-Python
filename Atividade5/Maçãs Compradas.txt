@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+int quantidade;
+float compra;
+setlocale(LC_ALL, "Portuguese");
+printf("Digite a quantidade de maçãs compradas:");
+scanf("%d", &quantidade);
+
+if (quantidade >= 12){
+   compra= quantidade * 0.25;
+}
+else {
+   compra= quantidade * 0.30;
+}
+printf("\nO valor de sua compra é: %.2f", compra);
+}
