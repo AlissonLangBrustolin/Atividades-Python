@@ -1,0 +1,27 @@
+remedios = ["Dorflex", "Dramin", "Ibuprofeno", "Fluoxetina", "Omeprazol", "Paracetamol"]
+menu = ""
+caixa = 0
+index = 0
+while (menu != "s"):
+    menu = input("\n Olá! Insira a opção desejada: \n a. Venda \n b. Compra \n c. Substituição \n s. Sair \n")
+    print("Estes são os remédios disponíveis")
+    for i in remedios:
+        print(i)
+    if(menu == "a"):
+        remedios.remove(input("Insira o remédio para venda: "))
+        venda = float(input("Insira o valor do remédio"))
+        caixa = caixa + venda
+    if(menu == "b"):
+        remedios.append(input("Insira o remédio adquirido: "))
+        compra = float(input("Insira o valor do remédio"))
+        caixa = caixa - compra
+    if(menu == "c"):
+        print("Estes são os remédios disponíveis para substituição: ")
+        if (index > 0):
+            index = 0
+        for i in remedios:
+            print(index, i)
+            index += 1
+        remedioum = int(input("Insira o número a esquerda do remédio que você quer retirar: "))
+        remediodois = input("Insira o nome do remédio para ser inserido")
+        remedio[remedioum] = remediodois
