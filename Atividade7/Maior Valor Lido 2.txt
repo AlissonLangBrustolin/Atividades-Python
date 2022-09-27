@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+//Escreva um programa que leia três números inteiros
+//e imprima na tela o maior número informado
+
+int main(){
+    int numero1, numero2, numero3;
+
+    //Passo 1 - Recebendo os números do usuário
+    setlocale(LC_ALL, "Portuguese");
+    printf("Digite o primeiro número: \n");
+    scanf("%d", &numero1);
+    printf("\nDigite o segundo número: \n");
+    scanf("%d", &numero2);
+   
+   //Passo 2 - Comparando os valores e inserindo o 3º valor.
+   if(numero1 == numero2){
+   	printf("O número 1 é igual o número 2");
+   	exit(0);
+   } else {
+   		printf("\nDigite o terceiro número: \n");
+	    scanf("%d", &numero3);
+	    if(numero3 == numero2){
+	    	printf("O número 3 é igual o número 2");
+   			exit(0);
+		} else if (numero3 == numero1){
+			printf("O número 3 é igual o número 1");
+   			exit(0);
+		}
+   }
+    
+    //Passo 3 - Encontrando quem é o maior número
+    if(numero1 > numero2 && numero1 > numero3){
+    	printf("O número %d é o maior", numero1);
+	} else if(numero2 > numero1 && numero2 > numero3){
+    	printf("O número %d é o maior", numero2);
+	} else {
+		printf("O número %d é o maior", numero3);
+	}
+return (0);
+}
