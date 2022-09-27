@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+	
+    float lados, lado, area;
+	
+	setlocale(LC_ALL, "Portuguese");
+	printf("Quantidade de Lados: \n");	
+	scanf("%f", &lados);
+	
+	if (lados < 3){
+		printf("Não é um Polígono");
+		
+	}else if(lados == 3) {
+	printf("\nTriângulo");
+	printf("\n\nInsira o valor do lado em cm: ");	
+	scanf("%f", &lado);
+	area = (pow (lado, 2) * pow (3,1/2)) / 4;
+	printf("\nO valor da área é: %.1f", area);
+		
+} else if (lados == 4){
+	printf("\nQuadrado");
+	printf("\nInsira o valor do lado em cm: \n");	
+	scanf("%f", &lado);
+	area = pow (lado, 2);
+	printf("O valor da área é: %.1f", area);
+
+
+} else	if (lados > 5){
+		printf ("Polígono Não Identificado");
+	}
+	
+ return 0;
+}
