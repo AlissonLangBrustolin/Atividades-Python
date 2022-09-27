@@ -1,0 +1,173 @@
+1) O que é uma Estrutura Condicional em Python? Justifique com um exemplo de um
+programa que utilize uma estrutura condicional completa.
+
+Resposta: Uma estrutura condicional na linguagem Python, como a Python If Else, corresponde a 
+um bloco de código que é iniciado com uma expressão para avaliar se uma determinada 
+condição é verdadeira ou falsa. Com ele, podemos testar se uma variável é igual a zero, por exemplo.
+
+Exemplo
+
+print("Digite A Nota Média 1:")
+m1 = float(input())
+print("Digite A Nota Média 2:")
+m2 = float(input())
+print("Digite A Nota Média 3:")
+m3 = float(input())
+
+media = (m1 + m2 + m3) / 3
+print('Média:', media)
+
+if media >= 6:
+    print("Aluno Aprovado!")
+elif media < 4:
+    print("Aluno Reprovado!")
+elif media >= 4 and media < 6:
+    print("Aluno Pegou Exame!")
+    print("Digite A Nota do Exame")
+    exame = float(input())
+    if exame >= 6:
+        print("Aluno Aprovado no Exame!")
+    else:
+        print("Aluno Reprovado no Exame!")
+
+
+2) O que é um Laço de Repetição em Python? Justifique com dois exemplos de
+programa que utilize os laços de repetição, cada programa um laço diferente.
+
+Resposta: Laços de repetição, também conhecidos como laços de iteração ou simplesmente loops, 
+são comandos que permitem iteração de código, ou seja, que comandos presentes no 
+bloco sejam repetidos diversas vezes.
+
+Exemplo 1
+
+for c in range (1, 200):
+    print(c)
+print("Fim!")
+
+Exemplo 2
+
+i = 1
+while i < 11:
+    print(i)
+    i = i + 1
+print("Encerrou!")
+
+
+3) Qual a diferença entre WHILE e FOR na linguagem Python?
+
+Resposta: O Laço de Repetição while no Python repete um bloco de instrução enquanto a condição definida em seu cabeçalho for verdadeiro, 
+e no Laço de Repetição for no Python ela é utilizada para percorrer elementos em sequência, como uma string, uma lista, uma tupla ou objetos iteráveis.
+
+4) Qual a diferença no uso de FOR na linguagem Python e nas outras linguagens?
+Utilize como exemplo a linguagem C, vista em aula.
+
+Resposta: No Python ela é utilizada para percorrer 
+elementos em sequência, como uma string, uma lista, uma tupla ou objetos iteráveis. 
+No Java Essas estruturas são utilizadas para executar diversas vezes um mesmo bloco de instruções  
+e a sequência de comandos é programada para voltar ao seu ponto de origem assim que completada, resumidamente. 
+No C utiliza uma variável para controlar a contagem do loop, bem como seu incremento. 
+No PHP ela recebe uma condição e incrementa a mesma até ser falsa. 
+No C++  existe um término definido, sempre vai tem um fim definido para esse laço implementado no inicio. 
+No JavaScript ela é geralmente usada para iniciar o contador de variáveis.
+
+Exemplo em C
+
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+
+    int numero, i;
+
+    setlocale(LC_ALL,"Portuguese");
+    printf("Digite Um Número: ");
+    scanf("%d", &numero);
+
+    printf("Crescente\n");
+    for(i = 0; i <= numero; i++){
+        printf("- %d\n", i);
+    }
+
+    printf("\n\nDecrescente\n");
+    for(i = numero; i >= 0; i--){
+        printf("- %d\n", i);
+    }
+
+    return 0;
+}
+
+5) Para um sistema de venda e compra escrito em Python seria melhor utilizar o
+WHILE ou o FOR? Justifique fazendo um pequeno programa com duas opções
+sendo elas: venda, compra e sair.
+
+Exemplo 1 While
+
+nome = input ("Olá! Digite Seu Nome: ")
+print ("Bem Vindo a Loja de Tênis ", nome.title())
+
+menu = ""
+caixa = 0
+receber = 0
+
+while (menu != "S"):
+    print ("Digite a Opção Desejada")
+    print (" - A. Venda \n - B. Compra \n - S. Sair ")
+    menu = input("")
+    
+    if (menu == "A"):
+        venda = float(input("Digite O Valor da Venda:"))
+        print ("O seu Caixa Atual é:", caixa + venda)
+        caixa = caixa + venda
+            
+    elif (menu == "B"):
+        venda = float(input("Digite O Valor da Pagamento:"))
+        print ("O seu Caixa Atual é:", caixa + receber)
+        caixa = caixa + venda + receber
+            
+    
+            
+    else:
+        print ("O Sistema Foi Finalizado, Reinicie!")  
+          
+
+
+ Exemplo 2 For
+
+nome = input ("Olá! Digite Seu Nome: ")
+print ("Bem Vindo a Loja de Tênis ", nome.title())
+
+menu = ""
+caixa = 0
+receber = 0
+
+for menu in nome:
+    print ("Digite a Opção Desejada")
+    print (" - A. Venda \n - B. Compra \n - S. Sair ")
+    menu = input("")
+    
+    if (menu == "A"):
+        venda = float(input("Digite O Valor da Venda:"))
+        print ("O seu Caixa Atual é:", caixa + venda)
+        caixa = caixa + venda
+            
+    elif (menu == "B"):
+        venda = float(input("Digite O Valor da Pagamento:"))
+        print ("O seu Caixa Atual é:", caixa + receber)
+        caixa = caixa + venda + receber
+            
+    
+            
+    else:
+        print ("O Sistema Foi Finalizado, Reinicie!")
+
+
+
+6) Você tem curiosidade de conhecer qual Linguagem de Programação? Justifique
+
+Resposta: Teria curiosidade em conhecer a linguagem Python, Ele pode ser usado em praticamente qualquer lugar, desde aplicativos web até 
+o desenvolvimento de software e criação de jogos. Plataforma cruzada. 
+Alta popularidade significa muitos recursos e ainda mais empregos.
+ 
+          
+
+
