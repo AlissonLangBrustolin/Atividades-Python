@@ -1,0 +1,29 @@
+nome = input ("Olá! Digite Seu Nome: ")
+print ("Bem Vindo a Loja de Tênis ", nome.title())
+
+menu = ""
+caixa = 0
+receber = 0
+
+while (menu != "S"):
+    print ("Digite a Opção Desejada")
+    print (" - A. Venda \n - B. Receber \n - C. Consultar Caixa \n - S. Sair ")
+    menu = input("")
+    
+    if (menu == "A"):
+        venda = float(input("Digite O Valor da Venda:"))
+        print ("O seu Caixa Atual é:", caixa + venda)
+        caixa = caixa + venda
+            
+    elif (menu == "B"):
+        venda = float(input("Digite O Valor da Pagamento:"))
+        print ("O seu Caixa Atual é:", caixa + receber)
+        caixa = caixa + venda + receber
+            
+    elif (menu == "C"):
+        print ("O Valor Em Caixa é:", caixa)
+            
+    else:
+        print ("O Sistema Foi Finalizado, Reinicie!")  
+          
+            
