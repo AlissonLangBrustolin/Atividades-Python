@@ -1,0 +1,49 @@
+1) #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+main() {
+    float s,sh,h;
+    
+    setlocale(LC_ALL, "Portuguese");
+	printf("Qual é o Seu Salário Por Hora: ");
+    scanf("%f",&sh);
+    printf("\nQual é o Total de Horas, Por Mês, Que Você Trabalha: ");
+    scanf("%f",&h);
+    
+    s = (sh*h);
+    
+    printf("\nO Seu Salário Mensal Será De:  %.2f.",s);
+}
+
+
+2) #include <stdio.h>
+#include <locale.h>
+
+float peso,excesso,multa,pesolimite=50;
+
+int main(){
+setlocale(LC_ALL,"Portuguese");
+
+printf("Olá Seu João! Quantos Quilos De Peixe o Senhor Pescou Hoje?\n");
+scanf("%f",&peso); 
+
+	
+if (peso>pesolimite){
+excesso = peso - pesolimite;
+multa = excesso * 4.00;
+printf("\nVai Precisar Pagar Multa Seu João!! O Valor Da Multa é De R$ %.2f\n", multa);
+} else{
+	printf("\nNão é Necessário Pagar multa Seu João! O Peixe Pesa Apenas %.2f Kg!\n", peso);
+}
+
+return 0;
+}
+
+3) n1= int(input("1º Número inteiro: "))
+n2 = int(input("2º Número inteiro: "))
+n3 = float(input("Número real: "))
+
+print ("Soma:", ((2*n1) * (n2/2)))
+print ("Produto:", (3 * n1) + n3)
+print ("Cubo:", n3**3)
