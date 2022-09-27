@@ -1,0 +1,10 @@
+app = int(input("Insira o número de maças que Alfredo vai dar: "))
+if (app == 1):
+    resul = (4 - 1)
+    print("Alfredo deu uma maçã, logo, ele ficou com 75%.")
+if (app == 2):
+    resul = (4 - 2)
+    print("Alfredo deu duas maçãs, logo, ele terá metade.")
+if (app == 3):
+    resul = (4 - 2)
+    print("Alfredo deu três maçãs, logo, ele terá 25%.")
