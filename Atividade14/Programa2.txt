@@ -1,0 +1,55 @@
+def input_idade():
+    valida_idade = False
+    idade = int(input('Digite Idade: '))
+    while not valida_idade:
+        if idade < 1 or idade > 150:
+            print('Dados invalidos!')
+            idade = int(input('Digite Idade: '))
+        else:
+            valida_idade = True
+
+
+def input_nome():
+    valida_nome = False
+    nome = str(input('Digite Nome: ')).strip().upper()
+    while not valida_nome:
+        if len(nome) < 3:
+            print('Dados invalidos!')
+            nome = str(input('Digite Nome: ')).strip().upper()
+        else:
+            valida_nome = True
+
+
+def input_salario():
+    salario = float(input('Digite Salário: '))
+    while salario < 1:
+        print('Dados invalidos!')
+        salario = float(input('Digite Salário: '))
+
+
+def input_sexo():
+    valida_sexo = False
+
+    while not valida_sexo:
+        sexo = str(input('Digite Sexo: [M ou F] ')).upper().strip()
+        if len(sexo) > 1 or sexo not in 'MF':
+            print('Dados Inválidos')
+        else:
+            valida_sexo = True
+
+
+def input_estado_civil():
+    valida_estado_civil = False
+    while not valida_estado_civil:
+        estado_civil = str(input('Estado Civil:\n[S] Solteiro\n[C] Casado\n[V] Viúvo\n[D] Divorciado\n')).upper().strip()
+        if len(estado_civil) > 1 or estado_civil not in 'SCVD':
+            print('Dados Inválidos!')
+        else:
+            valida_estado_civil = True
+
+
+input_nome()
+input_idade()
+input_sexo()
+input_estado_civil()
+input_salario()
