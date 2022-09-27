@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	//declaração das variáveis e leitura dos dados
+    float nota1, nota2, media;
+    
+	setlocale(LC_ALL, "Portuguese");
+	printf("Digite o Valor da Nota 1: \n");
+    scanf("%f", &nota1);
+    printf("Digite o Valor da Nota 2: \n");
+    scanf("%f", &nota2);
+    
+    //verificação da media
+	media=(nota1+nota2) /2;
+    
+    if(media>=7){
+	printf("Sua Média Aritmética é: %.1f  \n\n""Aluno Aprovado  \n\n", media);
+    }else
+	printf("Sua Média Aritmética é: %.1f  \n\n""Aluno Reprovado  \n\n", media);
+	if(media<7)
+	printf("Repetir a Disciplina \n\n", media);
+    system ("pause");
+    return 0;
+
+}
