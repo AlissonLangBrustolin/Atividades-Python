@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+  char sexo;
+  float h, psIdeal;
+
+  setlocale(LC_ALL, "Portuguese");
+  printf("Informe o sexo (1/2): ");
+  scanf("%c", &sexo);
+
+  printf("\nInforme a altura (M): ");
+  scanf("%f", &h);
+
+  if ((sexo == 'M') || (sexo == 'm'))
+     psIdeal = (72.7 * h) - 58;
+  else
+     psIdeal = (62.1 * h) - 44.7;
+
+  printf("\nSeu Peso Ideal eh: %.1f kg.", psIdeal);
+}
