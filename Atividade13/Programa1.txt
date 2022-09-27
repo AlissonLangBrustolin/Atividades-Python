@@ -1,0 +1,4 @@
+down = float(input("Por favor, insira o tamanho do arquivo que será baixado em MB: "))
+vlink = float(input("Ok, agora insira a velocidade do link da Internet que está sendo usada em Mbps: "))
+temp = vlink * down
+print("O tempo necessário para terminar o download em minutos é de:", temp, "minutos")
