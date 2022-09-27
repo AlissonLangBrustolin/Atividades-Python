@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int ano_nasceu, ano_atual, idade;
+
+int main (){
+
+setlocale(LC_ALL, "Portuguese");
+printf ("Digite o ano que você nasceu: ");
+scanf ("%d", &ano_nasceu);
+printf ("\nDigite o ano atual: ");
+scanf ("%d", &ano_atual);
+
+idade =  ano_atual - ano_nasceu;
+
+if (idade >= 18){
+	printf ("\nVocê tem %d anos. Você pode votar!", idade);
+} else {
+	printf ("Você tem %d anos. Você não pode votar!", idade);
+}
+return 0;
+
+}
