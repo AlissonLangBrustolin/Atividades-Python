@@ -1,0 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (){
+    char r1, r2, r3, r4, r5, s, n;
+    s=0;
+    s=0;
+    
+    setlocale(LC_ALL, "Portuguese");
+    printf("INVESTIGAÇÃO\n\n");
+    printf ("Responda com [Sim] ou [Não]:\n\n");
+    printf("Telefonou para a Vítima?\n");
+    scanf ("%d\n", &r1);
+    if (r1,"sim")
+    s=s+1;
+    else if (r1,"não")
+    n=n+1;
+    {
+    printf("Esteve no Local do Crime?\n");
+    scanf ("%s\n", &r2);
+    if (r2,"sim")
+    s=s+1;
+    else if (r2,"não")
+    n=n+1;
+    {
+    printf("Mora Perto da Vítima?\n");
+    scanf ("%s\n", &r3);
+    if (r3,"sim")
+    s=s+1;
+    else if (r3,"não")
+    n=n+1;
+    {
+    printf("Devia para a Vitima?\n");
+    scanf ("%s\n", &r4);
+    if (r4,"sim")
+    s=s+1;
+    else if (r4,"não")
+    n=n+1;
+    {
+    printf("Já trabalhou com a Vítima?\n");
+    scanf ("%s\n", &r5);
+    if (r5,"sim")
+    s=s+1;
+    if (r5,"não")
+    n=n+1;
+    }}}
+    {
+    scanf ("%d", s);
+    scanf ("%d", n);
+    if (s==2)
+    {
+    printf ("\nSuspeita\n\n");
+    }
+    else if (s==3)
+    {
+    printf ("\nCúmplice\n\n");
+    }
+    else if (s==4)
+    {
+    printf ("\nInocente\n\n");
+    }
+    else if (s==5)
+    {
+    printf ("\nAssassino\n\n");
+    }
+    else
+    {
+    printf ("\nInocente\n\n");
+    }
+    system("pause");
+}}}
