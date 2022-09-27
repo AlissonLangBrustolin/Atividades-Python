@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+  int numero;
+
+  setlocale(LC_ALL, "Portuguese");
+  printf("Digite Um Número de 1 a 7: ");
+  scanf("%d", &numero);
+
+  if (numero == 1) {
+    printf("Domingo\n");
+  }
+  
+  if (numero == 2) {
+    printf("Segunda - Feira\n");
+  }
+  
+  if (numero == 3) {
+    printf("Terça - Feira \n");
+  }
+  
+  if (numero == 4) {
+    printf("Quarta - Feira \n");
+  }
+  
+  if (numero == 5) {
+    printf("Quinta - Feira \n");
+  }
+  
+  if (numero == 6) {
+    printf("Sexta - Feira \n");
+  }
+  
+  if (numero == 7) {
+    printf("Sábado\n");
+  }
+  
+  
+  return 0;
+}
