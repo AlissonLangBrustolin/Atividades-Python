@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(){
+	
+	int qnt_alunos,qnt_alunas;
+	setlocale(LC_ALL, "Portuguese");
+	printf("Digite a quantidade de alunos: \n");
+	scanf("%d",&qnt_alunos);
+	
+    printf("\nDigite a quantidade de alunas: \n");
+	scanf("%d",&qnt_alunas);	
+	
+	if(qnt_alunos > qnt_alunas)
+	printf("\nExistem mais alunos do que alunas.");
+	
+	if(qnt_alunas > qnt_alunos)
+	printf("\nExistem mais alunas do que alunos.");
+	
+    if(qnt_alunas == qnt_alunos)
+	printf("\nO número de alunas é igual o número de alunos.");
+	
+	if(qnt_alunos == qnt_alunas)
+	printf("\nO número de alunos é igual o número de alunas.");
+		
+}
