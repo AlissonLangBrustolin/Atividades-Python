@@ -1,0 +1,14 @@
+from carro import Carro, Motor
+
+c1 = Motor('Ferrari')
+print(vars(c1)
+c1.modificar('Mustang',True,True)
+c1.ligar()
+c1.acelerar(100)
+print(vars(c1))
+c1 = Carro('Amarelo')
+print(vars(c1))
+c1.modificar('Preto', True, True)
+c1.ligar()
+c1.acelerar(50)
+print(vars(c1))
